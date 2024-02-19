@@ -13,4 +13,4 @@ LoginTest
     Login    ${SiteUrl}    ${Browser}    ${email}    ${pwd}
     Sleep    2 seconds
     Verify Succesfull Login
-    close my Browsers
+    Close All Browsers

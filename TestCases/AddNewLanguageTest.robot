@@ -15,15 +15,10 @@ ${message}    has been added to your languages
 
 
 *** Test Cases *** 
-Clear All Records
-    Login    ${SiteUrl}    ${Browser}    ${email}    ${pwd}
-    Sleep    3 seconds
-    Clear All Languages
-    Close All Browsers
-
 Add New Language Test
     Login    ${SiteUrl}    ${Browser}    ${email}    ${pwd}
-    Sleep    3 seconds
+    Sleep    2 seconds
+    Clear All Languages
     Add New Language    ${language}    ${languageLevel}
     Sleep    3 seconds
     Verify PopUp Message    ${message}

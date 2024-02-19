@@ -47,7 +47,7 @@ Add New Language
 
 Clear All Languages
     Click Language Tab
-    ${AllLanguagesCount}=    Get Element Count    xpath://div[@data-tab='first']/div/div[2]/div/table[@class='ui fixed table']/tbody
+    ${AllLanguagesCount}=    Get Element Count    ${rcd_languageRecords}
     #Log    ${AllLanguagesCount}
     FOR    ${i}    IN RANGE    0    ${AllLanguagesCount}
         Log    ${i} 
